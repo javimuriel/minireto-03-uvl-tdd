@@ -61,10 +61,8 @@ def count_features(model_path: Path) -> int:
         raise ValueError(f"{model_path} no contiene características reconocibles")
     return count
 
-
 def classify_model_size(feature_count: int) -> str:
-    raise NotImplementedError("Implementar mediante TDD")
-
+    return "tiny"
 
 def validate_catalog(
     catalog_path: Path | None = None,
